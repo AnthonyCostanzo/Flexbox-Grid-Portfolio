@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  background: black;
+}
+
+nav {
+  background-color: white;
+  min-height: 7vh;
+  color: black;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  z-index: 1;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  nav ul {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: white;
+  background: url(https://png.pngtree.com/thumb_back/fh260/background/20190222/ourmid/pngtree-ppt-black-gold-starry-background-backgroundppt-templatestarry-skyblackgoldsimple-image_62910.jpg);
+  background-position: center;
+  background-size: cover;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 100px;
+  min-height: 100vh;
+}
+
+.main-left {
+  max-width: 50vw;
+  max-height: 100%;
+}
+
+.main-left .article {
+  padding: 10px;
+  margin-left: 10px;
+  padding-left: 50px;
+}
+
+.main-left .article .btn {
+  margin-top: 20px;
+}
+
+.main-left .article .btn button {
+  width: 100px;
+  border-radius: 50%;
+  font-size: 1rem;
+  border: none;
+  padding: 10px;
+  background-color: white;
+  color: #50c878;
+  font-weight: 600;
+}
+
+.main-left .article .btn button:hover {
+  cursor: pointer;
+}
+
+.main-left .article h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  background: -webkit-linear-gradient(#00ff5b, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-left .article p {
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+
+.main-right {
+  width: 50vw;
+  max-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-right .img {
+  max-width: 100%;
+  max-height: 50%;
+}
+
+.main-right .img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-left {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    min-width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .main-left .article {
+    padding-left: 20px;
+    margin-left: 0px;
+  }
+  .main-left .article h1 {
+    font-size: 2rem;
+  }
+  .main-left .article p {
+    font-size: 1.3rem;
+    line-height: 2;
+  }
+  .main-right {
+    min-width: 100vw;
+  }
+  .main-right .img {
+    max-height: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
